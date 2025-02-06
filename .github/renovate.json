@@ -1,0 +1,19 @@
+{
+  "packageRules": [
+    {
+      "groupName": "Go dependencies",
+      "groupSlug": "go-dependencies",
+      "matchDatasources": [
+        "go"
+      ]
+    },
+    {
+      "groupName": "JS dependencies",
+      "groupSlug": "js-dependencies",
+      "matchDatasources": [
+        "npm",
+        "node-version"
+      ]
+    }
+  ]
+}
