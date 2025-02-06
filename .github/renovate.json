@@ -17,9 +17,15 @@
       "matchDatasources": [
         "go"
       ]
-    },
+    }
   ],
   "postUpdateOptions":[
     "gomodTidy"
-  ]
+  ],
+  "nvm": {
+    "enabled": false
+  },
+  "npm": {
+    "enabled": false
+  }
 }
