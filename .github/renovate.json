@@ -1,4 +1,5 @@
 {
+  "labels": ["dependencies", "2-needs-review"],
   "packageRules": [
     {
       "groupName": "Go dependencies",
@@ -15,5 +16,8 @@
         "node-version"
       ]
     }
+  ],
+  "postUpdateOptions":[
+    "gomodTidy"
   ]
 }
