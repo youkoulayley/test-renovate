@@ -1,9 +1,19 @@
 {
-  "labels": ["dependencies", "2-needs-review"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "labels": [
+    "kind/enhancement",
+    "status/2-needs-review"
+  ],
   "packageRules": [
     {
       "groupName": "Go dependencies",
       "groupSlug": "go-dependencies",
+      "matchManagers": [
+        "gomod"
+      ],
       "matchDatasources": [
         "go"
       ]
@@ -11,6 +21,10 @@
     {
       "groupName": "JS dependencies",
       "groupSlug": "js-dependencies",
+      "matchManagers": [
+        "nvm",
+        "npm"
+      ],
       "matchDatasources": [
         "npm",
         "node-version"
